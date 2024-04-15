@@ -1,15 +1,3 @@
-#Busca reversa
-def reverse_lookup(d, v):
-    lista = []
-    for k in d:
-        if d[k] == v:
-           lista.append(k)
-    return lista
-
-eng2sp = {'one': 'uno', 'two': 'dos', 'three': 'tres','três': 'tres'}
-
-#print(reverse_lookup(eng2sp, 'tres'))
-
 
 def invert_dict(d):
     inverse = dict() #cria um dicionário vazio
@@ -21,8 +9,14 @@ def invert_dict(d):
             inverse[val].append(key)#adiciona a chave na lista
     return inverse
 
-print(invert_dict(eng2sp))
+def invert_dict2(d):
+    inverse = dict() #cria um dicionário vazio
+    for key in d:
+        val = d[key]
+        inverse.setdefault(val, []).append(key)
+    return inverse
+       
 
-def example3():
-    global count
-    count += 1
+
+eng2sp = {'one': 'uno', 'two': 'dos', 'three': 'tres','três': 'tres'}
+print(invert_dict2(eng2sp))
