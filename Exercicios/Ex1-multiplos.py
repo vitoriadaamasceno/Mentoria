@@ -20,3 +20,8 @@ def solution(number):
         if i % 3 == 0 or i % 5 ==0:
             lista.append(i)
     return sum(lista)
+
+#versao menor 
+def solution(number):
+    lista = [i for i in range(1,number) if i % 3 == 0 or i % 5 ==0]
+    return sum(lista)
