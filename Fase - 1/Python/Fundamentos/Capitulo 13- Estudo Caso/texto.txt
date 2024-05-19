@@ -1,0 +1,8 @@
+Olá, Mundo! Este é um arquivo de exemplo.
+Este arquivo contém várias linhas de texto.
+Cada linha será processada pelo programa.
+
+Aqui temos mais uma linha,
+com pontuação e espaços em branco!
+
+Vamos ver como o programa se compor
