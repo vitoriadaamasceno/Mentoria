@@ -54,7 +54,7 @@ Assim, é um sistema com funcionalidades completas, que foi programado a partir 
 - Protocolos ✨
     - [ ] IP
         IP - Protocolo da Internet um dos protocolos mais importantes da web,  Ele permite a elaboração e transporte dos pacotes de dados, porém sem assegurar a sua entrega.Quem garante que a entrega daqueles dados está indo pra o usuário correto.
-        O destinatário da mensagem é determinado por meio dos campos de endereço IP (endereço do computador), máscara de sub rede (determina parte do endereço que se refere à rede) e o campo gateway estreita por padrão (permite saber qual o computador de destino, caso não esteja localizado na rede local).
+        **O destinatário da mensagem é determinado por meio dos campos de endereço IP (endereço do computador), máscara de sub rede (determina parte do endereço que se refere à rede) e o campo gateway estreita por padrão (permite saber qual o computador de destino, caso não esteja localizado na rede local)**.
     - [ ]  TCP / IP
         Trata-se do acrônimo de dois protocolos combinados são eles o TCP (Transmission Control Protocol — Protocolo de Controle de Transmissão) e IP (Internet Protocol — Protocolo de Internet).
         Juntos, são os responsáveis pela base de envio e recebimento de dados por toda a internet. Essa pilha de protocolos é dividida em 4 camadas:
@@ -72,5 +72,27 @@ Assim, é um sistema com funcionalidades completas, que foi programado a partir 
         O SSL (camada de portas de segurança) permite a comunicação segura entre os lados cliente e servidor de uma aplicação web, por meio de uma confirmação da identidade de um servidor e a verificação do seu nível de confiança.
         Ele age como uma subcamada nos protocolos de comunicação na internet (TCP/IP). Funciona com a autenticação das partes envolvidas na troca de informações.
 - Browsers e como eles funcionam ✨
+
+    Browser ou navegador é um programa utilizado apra nvegar na internet.Os navegadores utilizam um motor de renderização para exibir os conteúdos requeridos, composta por uma série de instruções HTML, CSS, JavaScript, PHP, entre outras, informando o que o navegador deve ou não fazer. Isso é resultado de respostas e requisições por meio dos protocolos HTTP/HTTPS. 
+    O órgão responsável por manter estes protocolos é chamado de W3C (Consórcio da WWW) fundado por Tim Barners Lee em 1994. Porém cada navegador é responsável por implementar a sua forma de respeitar os protocolos da W3C, tornando assim a implantação de novas pages e web apps mais acessível (em teoria).
+    Cada navegador utiliza um motor de renderização diferente, motivo esse que o seu projeto pode funcionar no Chrome e não funcionar no Safari. 
 - DNS ✨
+
+    Os servidores DNS (Domain Name System, ou Sistema de Nomes de Domínios) são os responsáveis por localizar e traduzir para números IP (Internet Protocol) os endereços dos sites que digitamos nos navegadores — como www.canaltech.com.br, por exemplo.
+    [link](https://canaltech.com.br/internet/o-que-e-dns/)
+
 - VPN ✨
+    VPN significa “Virtual Private Network” (Rede Privada Virtual) e descreve a oportunidade de estabelecer uma conexão de rede protegida ao usar redes públicas. 
+    As VPNs criptografam seu tráfego de Internet e disfarçam sua identidade online, sendo que essa criptografia ocorre em tempo real.
+
+    Isso torna mais difícil para terceiros rastrear suas atividades online e roubar seus dados.
+    Os servidores VPN atuam essencialmente como suas proxies na Internet. Como os dados de localização demográfica vêm de um servidor em outro país, sua localização real não pode ser determinada.
+
+    Além disso, a maioria dos serviços VPN não armazena registros de suas atividades. Alguns provedores, por outro lado, registram seu comportamento, mas não repassam essas informações a terceiros.
+
+    Isso significa que qualquer registro potencial do seu comportamento de usuário fica permanentemente oculto.
+
+    [link](https://www.kaspersky.com.br/resource-center/definitions/what-is-a-vpn)
+
+Proxy x VPN 
+Da mesma forma, indivíduos podem obter serviços de VPN ou se inscrever em provedores de serviços de proxy para navegar na Internet anonimamente. Nesses casos, o provedor de VPN permite que o usuário individual acesse a Internet por meio de um túnel criptografado. Em seguida, um serviço proxy roteia a atividade do usuário na Internet por meio de um servidor proxy. Há muitas conexões proxy gratuitas e VPNs grátis disponíveis no mercado para usuários individuais.

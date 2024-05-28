@@ -1,16 +1,24 @@
-def factorial (n):
+def fatorial(n):
     if not isinstance(n, int):
-        print('Factorial is only defined for integers.')
+        print('Valor não é um numero inteiro')
         return None
     elif n < 0:
-        print('Factorial is not defined for negative integers.')
+        print('Valor não pode ser um numero negativo')
         return None
     elif n == 0:
         return 1
     else:
-        return n * factorial(n-1)
-    
-print(factorial(3.2))
+        return n * fatorial(n-1)
+
+while True:
+    try:
+        user_input = int(input("Digite um número inteiro: "))
+        resultado = fatorial(user_input)
+        if resultado is not None:
+            print(f"Fatorial de {user_input} é {resultado}")
+            break  # Saia do loop se o cálculo for bem-sucedido
+    except ValueError:
+        print('Por favor, digite um número inteiro válido')
 
 def fibonacci (n):
     if n == 0:
