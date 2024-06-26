@@ -22,12 +22,12 @@ class Carro(Veiculo):
     def combustivel(self):
         print(f"Carro {'não está' if not self.carregado else 'está'} carregado")   
 
+class Caminhao(Veiculo):
+    pass
 
 motinha = Moto("azul", placa=8985, numero_rodas=2)
-print(motinha)
-motinha.ligar()
-
 carro = Carro("vermelho", placa=1234, numero_rodas=4, carregado=True)
+caminhao = Caminhao("verde", placa=4321, numero_rodas=6)
+print(motinha)
 print(carro)
-carro.ligar()
-carro.combustivel()
+print(caminhao)
