@@ -11,6 +11,8 @@ class B (A):
 class C(A,B):
     pass """
 
+
+#retornando o nome da classe em minusculo
 class Foo:
     def hello(self):
         print(self.__class__.__name__.lower())
