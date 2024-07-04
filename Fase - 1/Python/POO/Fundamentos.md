@@ -24,3 +24,21 @@ Uma classe definir as caracteristas e comportamentos de um objetos porém não u
     - Representa bem o mundo real 
     - Evitar usar uma muitas camadas de reutilização
     - Herança simples e multiplas
+
+
+2. Encapsulamento: È a ideia de agrupar dados e metodos que manipulam esses dados , uma especie de proteção a esses dados para que nem todo mundo possa manipula-lo
+
+    - Exemplo real: você tem uma aplicação para cadastro de produto, em que seu app tem um bug quando você cadastra um produto de 20,00 e toda vez que eu cadastro ele salva como 10,00. Dentro do meu código a varias partes que mexe com a variavel produto, eu teria que verificar todos pra vê se algum está alterando isso , com o encapsulamento eu posso ter um metodo protegido para cadastro , então ngm pode acessar diretamente o valor só através de metodos publicos 
+    - o python não tem nada reservado para proteger essa varivel mas por convenção usamos o _
+    - Publico = pode ser acessado fora da classe
+    - Privado =  só pode ser acessado pela classe
+    - Propedies
+        cria atributos gerenciados, usa atributos gerenciados quando precisar mudar algo internamente 
+
+
+3. Polimorfismo: O mesmo nome de função porém com assinaturas diferentes , ou seja um dado tenho muitas formas
+
+    - a funçao len é um exemplo de polimorfismo nativo, caso a gente passe uma lista ele conta os elementos da lista, caso for uma string conta os caracteres
+
+
+4. Interfaces e classes abstratas
