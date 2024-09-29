@@ -2,7 +2,7 @@
 
 - Como a Internet funciona? ✨
 
-O que é ?
+O que é ? 
 
 Entendendo que rede é um grupo de computadores conectados que são capazes de enviar dados uns para os outros como um grupo de amigos em um circulo social.
 A palavra internet deriva do conceito interconexões de redes, ou seja, é uma vasta e espalhada coleção de redes que se conectam umas ás outras. Dessas forma podemos nos comunicar através do computadores porque estão dentro dessas redes que também estão conectadas.

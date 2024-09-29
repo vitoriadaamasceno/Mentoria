@@ -42,3 +42,25 @@ Uma classe definir as caracteristas e comportamentos de um objetos porém não u
 
 
 4. Interfaces e classes abstratas
+
+    - atributos de classe são compartilhados entre todas as instâncias da classe
+    - atributos de instância são específicos de cada instância da classe
+    - metodos de classes: esta ligado a classe e não ao objeto, ele chama cls e não self( convenção), tem acesso ao estado da classe
+    - metodos estaticos: È vinculado a classe e não ao objeto , porém não acessa o estado da classe, faz sentido dentro da classe
+    - Diferença entre os metodos:
+        - O metodo de classe recebe o parametro que aponta pra classe  e o estático não.
+
+        - O de classe muda o estado da classe o estático não altera e nem pode acessar
+
+
+    4.1 Intefaces; Definem o que uma classe deve fazer e não como ela deve fazer , todo mundo pode usar mas o como é da sua forma
+
+        - Em python a interface é definir uma contrato onde são declarados os metodos ( o que deve ser feito), e suas assinatiras usando classes abstratas para criar ccontratos
+
+        - Classes abstratas não podem ser instanciadas 
+
+    
+    4.2 Classes abstratas: Por padrão python não oferece classes abstratas , mas existe um modulo (ABC) que fornece a base para definir essas classes
+
+
+    
