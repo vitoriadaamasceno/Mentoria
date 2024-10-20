@@ -1,0 +1,116 @@
+# Hands-on: Docker Container e Images
+
+## 1. Entendendo Images e Containers
+
+- **Image**: A imagem funciona como um template para a criação de containers. Uma imagem contém tudo o que é necessário para executar uma aplicação, incluindo o código, bibliotecas, dependências e configurações.
+
+- **Container**: Uma instância em execução de uma imagem. Os containers são isolados e podem ser iniciados, parados e removidos.
+
+## 2. Comandos Básicos
+
+Verifica a instalação do Docker
+```bash
+docker --version
+```
+
+Lista imagens disponíveis localmente
+```bash
+docker images
+```
+
+Lista containers em execução
+```bash
+docker ps
+```
+
+Lista todos os containers (em execução e parados)
+```bash
+docker ps -a
+```
+
+## 3. Trabalhando com Imagens
+
+Baixa uma imagem do `Docker Hub`
+```bash
+docker pull nginx
+```
+
+Remove localmente uma imagem
+```bash
+docker rmi nginx
+```
+
+## 4. Criando e Executando Containers
+
+Iniciando um container com a imagem do `hello-world`
+```bash
+docker run hello-world
+```
+
+Iniciando um container com a imagem do `nginx`
+```bash
+docker run -d -p 8080:80 --name meu_nginx nginx
+```
+
+- `-d`: executa o container em background
+
+- `-p 8080:80`: mapeia a porta 8080 do host para a porta 80 do container
+
+- `--name meu_nginx`: nomeia o container como meu_nginx
+
+## 5. Gerenciando Contêineres
+
+Para um container
+```bash
+docker stop meu_nginx
+
+docker stop <container_id>
+```
+
+Remove um container
+```bash
+docker rm meu_nginx
+
+docker rm <container_id>
+```
+
+Iniciar um container
+```bash
+docker start meu_nginx
+```
+
+- **Uso**: É utilizado para iniciar um ou mais containers que estão parados.
+- **Comportamento**: O container é iniciado a partir do seu estado atual, mantendo a configuração e os dados.
+
+Reiniciar um container
+```bash
+docker restart meu_nginx
+```
+- **Uso**: É utilizado para parar e em seguida reiniciar um contêiner em execução.
+- **Comportamento**: O container é primeiro interrompido e, em seguida, iniciado novamente. Isso é útil para aplicar alterações de configuração ou reiniciar um serviço.
+
+## 6. Comandos Úteis
+
+Remove todas os containers
+```bash
+docker rm $(docker ps -a -q)
+```
+
+Remove todas as imagens
+```bash
+docker rmi $(docker images -q)
+```
+
+Remove todos os containers que foram criados com a imagem dos nginx
+```bash
+docker rm $(docker ps -aq --filter ancestor=nginx)
+```
+
+Ajuda
+```bash
+docker <command> --help
+
+docker rm --help
+
+docker run --help
+```
