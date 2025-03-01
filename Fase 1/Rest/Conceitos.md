@@ -31,7 +31,7 @@ São regras de como uma aplicação web irá se comunicar, enviar e receber dado
 
 - Rest
 
-Usa solicitação HTTP através de verbos como GET, PUT, POST e DELETE.  é construída no protocolo REST. No desenvolvimento de serviços web, REST é um estilo arquitetônico e técnica de comunicação popular.
+Usa solicitação HTTP através de verbos como GET, PUT, POST e DELETE.  é construída no protocolo HTTP. No desenvolvimento de serviços web, REST é um estilo arquitetônico e técnica de comunicação popular.
 
 - GraphQL
 
@@ -42,6 +42,32 @@ Usa solicitação HTTP através de verbos como GET, PUT, POST e DELETE.  é cons
 
 - SOAP
 
-É basicamente um protocolo de comunicação web que foi criado para a Microsoft em 1998. Hoje em dia, os principais usos para ele são transmissão de dados HTTP/HTTPS e exposição de serviços web.  Ao contrário do padrão REST, o SOAP suporta apenas o formato de dados XML 
+É basicamente um protocolo de comunicação web que foi criado para a Microsoft em 1998. Hoje em dia, os principais usos para ele são transmissão de dados HTTP/HTTPS e exposição de serviços web.  Ao contrário do padrão REST, o SOAP suporta apenas o formato de dados XML .
 
 https://www.geeksforgeeks.org/rest-api-vs-graphql-vs-soap/
+
+
+2. Métodos HTTP 
+Os principais métodos HTTP incluem:
+
+GET – Recupera dados do servidor.
+POST – Envia dados para criação de um recurso.
+PUT – Atualiza um recurso por completo.
+PATCH – Atualiza um recurso parcialmente.
+DELETE – Remove um recurso
+
+
+https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods
+
+
+3. Boas práticas e estrutura
+
+Basicamente a API rest tem 4 pilares para está bem feita : documentação, nomeclatura, verbos ,status.
+
+- Cuidado com as resposta de status sempre procure a que tem mais haver com resposta( sempre pense se a pessoa entenderia o que houve apenas com o status)
+- Endpoints devem ser compostos unicamente por nomes, não use verbos;
+- Utilize kebab-case para palavras compostas;
+- Use letras minúsculas;
+- Não termine seus endpoints com “/”;
+- Use diferentes verbos HTTP para suas operações. Por exemplo, POST é usado para criar um Recurso.
+
