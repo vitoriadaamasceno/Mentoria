@@ -2,14 +2,14 @@
 
 ### Conceito
 
- È uma abordagem focado no design de software usando uma serie de protocolos, técnicas e conceitos para garantinha eficência no desenvolvimento.
+ È uma abordagem focado no design de software usando uma serie de protocolos, técnicas e conceitos para garantir a eficência no desenvolvimento.
 
 ### Objetivo
 
-    O Domain-Driven Design traz uma série de técnicas importantes para realizar um design impecável de software, conseguindo unir funcionalidade, User Experience e visual atrativo para o usuário final. Sua abordagem deve ser eficaz a ponte de ter um bom design de software mas não deixar de atender as demandas e funções a serem cumpridas.
+    O Domain-Driven Design traz uma série de técnicas importantes para realizar um design impecável de software, conseguindo unir funcionalidade, User Experience e visual atrativo para o usuário final. Sua abordagem deve ser eficaz a ponto de ter um bom design de software mas não deixar de atender as demandas e funções a serem cumpridas.
 
-    Seu principal objetivo é manter o foco no Domínio de Software¹ de uma maneira automatizada.
-    O DDD não é sobre dividir a aplicação em camadas responsáveis, o DDD é sobre modelar corretamente o domínio do seu negócio. Se sua aplicação possui uma única camada de domínio e esta camada concentra todas as entidades do seu negócio você pode estar cometendo um grande erro de modelagem de domínio. Para aplicações que possuem domínios muito complexos o ideal é aplicar o conceito de Bounded Context.
+    Seu principal objetivo é manter o foco no Domínio de Software de uma maneira automatizada.
+    O DDD não é sobre dividir a aplicação em camadas responsáveis, o DDD é sobre modelar corretamente o domínio do seu negócio. Se sua aplicação possui uma única camada de domínio e esta camada concentra todas as entidades do seu negócio você pode estar cometendo um grande erro de modelagem de domínio. Para aplicações que possuem domínios muito complexos o ideal é aplicar o conceito de Bounded Context(É o foco da seção de design estratégico do DDD).
 
 
 ### O modelo DDD apresenta 5 itens principais:
