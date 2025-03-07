@@ -18,7 +18,7 @@ https://mailchimp.com/pt-br/resources/rest-api/
 
 3 - Exposição do seu négocio = facilitam a comunicação entre diferentes sistemas de software, permitindo que eles troquem dados de forma padronizada e atuando juntos. Algumas de suas utilidades são a conexão entre sistemas criado por diferentes empresas, permitindo a comunicação e o compartilhamento de informações.
 
-4 - Padronização facilitando toda a complexidade por trás daquilo
+4 - Padronização facilitando toda a complexidade por trás daquilo.
 
 
 ### Diferença entre Rest e Restful
@@ -129,7 +129,7 @@ Tipos de Autenticação:
 
 *OpenId Connect:*
 
-- Permite que o sistema A acesso o sistema B em nome do cliente sem que o sistema A tenha acesso a senha e usuário.
+- Permite que o sistema A acesso o sistema B em nome do cliente sem que o sistema A tenha acesso a senha e usuário. Como login pelo Google..
 
 *Auth2.0:*
 
@@ -143,7 +143,7 @@ Tipos de Autenticação:
 -> Boas Práticas
 
 1. Limite as tentivas de login
-2. Criptografia se senhas e token
+2. Criptografia de senhas e token
 
 https://www.dio.me/articles/autenticacao-e-autorizacao-de-uma-api
 https://blog.restcase.com/4-most-used-rest-api-authentication-methods/
@@ -159,9 +159,9 @@ A intenção do REST é que a API seja semelhando ao acesso a WEB ou seja que um
 È o processo de entender a regra de negócio e transforma-la em recursos para seus endpoints, respeitando os padrões do REST. Quando não puder fazer o REST puro deixar o mais proóximo possivél. 
 - A modelagem deve sempre olhar para os clientes (quem vai consumir) e não para os dados.
 - Foque nas principais e evite repetições de endpoints que fazem a mesma coisa.
-- Evite respostas json's muito complexas
+- Evite respostas json's muito complexas.
 - Entender as entidades e seus relacionamentos.
-- O DDD é um aliado para o REST já que ele fornece recursos e padroçoes que ajudar a documentar e modelar nos padrões REST.
+- O DDD é um aliado para o REST já que ele fornece recursos e padroes que ajuda a documentar e modelar nos padrões REST.
 
 Passo a passo:
 
@@ -194,9 +194,19 @@ Se você quiser armazenar vários tipos de dados diferentes com muitas variávei
 
 9. Negociação de conteúdo
 
-As negociações de conteudo é  é o mecanismo usado para servir diferentes representações de um recurso
+As negociações de conteudo é o mecanismo usado para servir diferentes representações de um recurso
 
-O Acceptcabeçalho sempre indica que tipo de resposta do servidor um cliente pode aceitar. Content-Typeé sobre o conteúdo da solicitação ou resposta atual, dependendo do tipo de mensagem HTTP aplicada.
+O Accept cabeçalho sempre indica que tipo de resposta do servidor um cliente pode aceitar. Content-Typeé sobre o conteúdo da solicitação ou resposta atual, dependendo do tipo de mensagem HTTP aplicada.
 
 Portanto, se uma solicitação não tiver carga útil, você não precisará enviar um Content-Typecabeçalho de solicitação, e o mesmo vale para sua resposta: sem corpo — sem cabeçalho necessário.
 
+
+10. Rest x gRPC
+
+gRPC e REST são duas abordagens diferentes para o desenvolvimento de APIs.
+
+**gRPC** é uma arquitetura e um sistema de API baseado em RPC que se trata de comunicações cliente-servidor funcionam como se as solicitações da API do cliente fossem uma operação local ou como se a solicitação fosse um código interno do servidor. Na RPC, um cliente envia uma solicitação para um processo no servidor que está sempre ouvindo chamadas remotas. Na solicitação, ele contém a função do servidor a ser chamada, junto com todos os parâmetros a serem transmitidos. Uma API RPC usa um protocolo como HTTP, TCP ou UDP como o mecanismo subjacente de troca de dados, o gRPC é semelhante porém ele usa  buffers de protocolo e HTTP 2 para a transmissão de dados.
+
+Tanto a gRPC quanto a REST usam o seguinte: 
+Comunicação assíncrona, para que o cliente e o servidor possam se comunicar sem interromper as operações
+Design sem estado, para que o servidor não precise se lembrar do estado do cliente.
