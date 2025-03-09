@@ -29,14 +29,14 @@ Uma classe definir as caracteristas e comportamentos de um objetos porém não u
 2. Encapsulamento: È a ideia de agrupar dados e metodos que manipulam esses dados , uma especie de proteção a esses dados para que nem todo mundo possa manipula-lo
 
     - Exemplo real: você tem uma aplicação para cadastro de produto, em que seu app tem um bug quando você cadastra um produto de 20,00 e toda vez que eu cadastro ele salva como 10,00. Dentro do meu código a varias partes que mexe com a variavel produto, eu teria que verificar todos pra vê se algum está alterando isso , com o encapsulamento eu posso ter um metodo protegido para cadastro , então ngm pode acessar diretamente o valor só através de metodos publicos 
-    - o python não tem nada reservado para proteger essa varivel mas por convenção usamos o _
+    - **o python não tem nada reservado para proteger essa varivel mas por convenção usamos o _**
     - Publico = pode ser acessado fora da classe
     - Privado =  só pode ser acessado pela classe
     - Propedies
         cria atributos gerenciados, usa atributos gerenciados quando precisar mudar algo internamente 
 
 
-3. Polimorfismo: O mesmo nome de função porém com assinaturas diferentes , ou seja um dado tenho muitas formas
+3. Polimorfismo: O mesmo nome de função porém com assinaturas diferentes , ou seja um dado tenho muitas formas.Definimos Polimorfismo como um princípio a partir do qual as classes derivadas de uma única classe base são capazes de invocar os métodos que, embora apresentem a mesma assinatura, comportam-se de maneira diferente para cada uma das classes derivadas.
 
     - a funçao len é um exemplo de polimorfismo nativo, caso a gente passe uma lista ele conta os elementos da lista, caso for uma string conta os caracteres
 
@@ -60,7 +60,15 @@ Uma classe definir as caracteristas e comportamentos de um objetos porém não u
         - Classes abstratas não podem ser instanciadas 
 
     
-    4.2 Classes abstratas: Por padrão python não oferece classes abstratas , mas existe um modulo (ABC) que fornece a base para definir essas classes
+    4.2 Classes abstratas: Por padrão python não oferece classes abstratas , mas existe um modulo (ABC) que fornece a base para definir essas classes.É um tipo de classe especial que não pode ser instanciada, apenas herdada. Sendo assim, uma classe abstrata não pode ter um objeto criado a partir de sua instanciação. Essas classes são muito importantes quando não queremos criar um objeto a partir de uma classe “geral”, apenas de suas “subclasses.
+
+
+    Vimos então que as classes abstratas e interfaces possuem algumas características semelhantes (não podem ser instanciadas, possuem métodos abstratos que obrigam as outras classes a implementá-los), porém elas não servem para o mesmo propósito.
+
+    Quando utilizamos as interfaces, estamos definindo um conjunto de assinatura de métodos que outras classes devem implementar. Com isso, apenas definimos o comportamento base de um conjunto de classes que, por ventura, implementem esta interface.
+
+    Já as classes abstratas servem para prover uma base para que as classes que “herdem” desta não precisem se preocupar com o comportamento padrão, apenas com suas características e comportamentos pessoais.
+    Sendo assim, sempre que precisarmos definir um conjunto de métodos que devem ser implementados por um grupo de classes, utilizamos as interfaces. Se precisarmos determinar uma classe base para outras classes, que herdarão seus atributos e métodos e esta classe não deva ser instanciada, utilizamos as classes abstratas.
 
 
     
