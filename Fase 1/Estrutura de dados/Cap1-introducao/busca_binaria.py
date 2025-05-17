@@ -1,4 +1,10 @@
 def pesquisa_binaria(lista, item):
+    '''
+    Pesquisa binária de um elemento em uma lista ordenada.
+    :param lista: Lista ordenada onde o elemento será buscado
+    :param item: Elemento a ser buscado
+    :return: Índice do elemento na lista ou None se não encontrado
+    '''
     menor = 0
     maior = len(lista) - 1
 
