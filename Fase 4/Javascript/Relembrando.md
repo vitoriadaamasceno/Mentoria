@@ -27,11 +27,16 @@ Os tipos podem ser
 
 
 Dicas: usar typeof() para descobrir o tipo
+
 Dicas : Js acaba mudando o valor das coisas sozinho,temos que tomar cuidado
     Exemplo:
+        
         - 5*null = 0
+        
         - "5" - 3 = 2
+        
         - "5" + 1 = 51
+        
         - "a"* "b" = NaN
 
 #### Declaração
