@@ -196,7 +196,7 @@ Se você quiser armazenar vários tipos de dados diferentes com muitas variávei
 
 As negociações de conteudo é o mecanismo usado para servir diferentes representações de um recurso
 
-O Accept cabeçalho sempre indica que tipo de resposta do servidor um cliente pode aceitar. Content-Typeé sobre o conteúdo da solicitação ou resposta atual, dependendo do tipo de mensagem HTTP aplicada.
+O Accept cabeçalho sempre indica que tipo de resposta do servidor um cliente pode aceitar. Content-Type é sobre o conteúdo da solicitação ou resposta atual, dependendo do tipo de mensagem HTTP aplicada.
 
 Portanto, se uma solicitação não tiver carga útil, você não precisará enviar um Content-Typecabeçalho de solicitação, e o mesmo vale para sua resposta: sem corpo — sem cabeçalho necessário.
 
