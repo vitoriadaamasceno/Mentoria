@@ -123,6 +123,18 @@ Dicas : Js acaba mudando o valor das coisas sozinho,temos que tomar cuidado
         }
         ```
 
+        - Rest Operator: forma de enviar vários parametros sem defini-lo. Assim como o python tem o kwargs, porém o ...args vem em formato de lista.
+        ```
+        const somaInfinita = (...args) => {
+            let total=0
+            for(let i = 0; i < args.lenght; i++){
+                console.log(i)
+            }
+        }
+        ```
+
+
+
 ### Json encurtados, spreat e Desestruturação
 
 Determinando as variáveis:
