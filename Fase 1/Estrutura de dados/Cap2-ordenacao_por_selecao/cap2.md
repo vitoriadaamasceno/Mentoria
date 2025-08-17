@@ -13,8 +13,11 @@
 ### Tempo de execução : Array x Listas encadeadas
 
 Tipo      | Arrays | Listas
+
 Leitura   | O(1)   | O(n)
+
 Inserção  | O(n)   | O(1)
+
 Deletar   | O(n)   | O(1)
 
 Ou seja, arrays são melhores para leitura porém as listas performam melhor para inserção e deleção. Considerando a alocação de memória.
