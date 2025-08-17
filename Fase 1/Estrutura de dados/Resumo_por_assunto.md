@@ -137,10 +137,10 @@ print(fatorial(5))  # Saída: 120
 ## ⚡ Quicksort
 
 **Conceito**  
-Algoritmo de ordenação eficiente que usa recursão e a ideia de “pivô”.
+Algoritmo de ordenação eficiente que usa recursão e a ideia de “pivô”.O quicksort adota a estratégia de **divisão e conquista**. A estratégia consiste em rearranjar de modo que os números maiores fiquem a direita do pivô e os números menores a esquerda, fazendo isso de forma recursiva, assim a lista fica cada vez menor.
 
 **Complexidade**
-- Média: `O(n log n)`
+- Média: `O(n * log n)`
 - Pior caso: `O(n²)`
 
 **Exemplo**
