@@ -38,6 +38,44 @@ Uma classe definir as caracteristas e comportamentos de um objetos porém não u
 3. Polimorfismo: O mesmo nome de função porém com assinaturas diferentes , ou seja um dado tenho muitas formas.Definimos Polimorfismo como um princípio a partir do qual as classes derivadas de uma única classe base são capazes de invocar os métodos que, embora apresentem a mesma assinatura, comportam-se de maneira diferente para cada uma das classes derivadas.
 
     - a funçao len é um exemplo de polimorfismo nativo, caso a gente passe uma lista ele conta os elementos da lista, caso for uma string conta os caracteres
+    - Sobrecarga:
+    Acontece quando temos métodos com o mesmo nome, mas assinaturas diferentes (quantidade ou tipo de parâmetros diferentes).É comum em linguagens como Java e C++, mas em Python não existe sobrecarga explícita – podemos simular usando valores padrão, argumentos variáveis (*args, **kwargs) ou verificações de tipo.
+    
+    ```python
+    class Calculadora:
+    def soma(self, *args):
+        return sum(args)
+
+    calc = Calculadora()
+    print(calc.soma(2, 3))       # 5
+    print(calc.soma(2.5, 3.5))   # 6.0
+    print(calc.soma(1, 2, 3))    # 6
+    ```
+    - Sobreposição (Overriding)
+
+        Acontece quando uma classe filha redefine um método herdado da classe pai com a mesma assinatura (mesmo nome e parâmetros), mas muda o comportamento. Isso é a essência do polimorfismo em orientação a objetos.
+
+            
+        ```python
+        class Animal:
+            def emitir_som(self):
+                print("O animal faz um som")
+
+        class Cachorro(Animal):
+            def emitir_som(self):
+                print("O cachorro late")
+
+        class Gato(Animal):
+            def emitir_som(self):
+                print("O gato mia")
+
+        a1 = Cachorro()
+        a2 = Gato()
+
+        a1.emitir_som()  # O cachorro late
+        a2.emitir_som() 
+        ```
+
 
 
 4. Interfaces e classes abstratas
