@@ -19,3 +19,7 @@ As tabelas hash são utéis para:
 
 
 
+#### Colisão
+
+
+#### Desempenho

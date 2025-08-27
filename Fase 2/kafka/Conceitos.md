@@ -2,10 +2,13 @@
 
 Doc: https://kafka.apache.org/documentation
 
+
 È um streaming distribuida, que oferece 4 API's principais: o producer, o consumer,a api de fluxos e a api conector. 
 Podendo enviar grandes volumes de dados e barramento para transferência de milhões de mensagens por segundo.
 
 O Apache Kafka é usado principalmente para construir pipelines de dados em tempo real e aplicativos de streaming. Muito usado para Enfileiramento de mensagens,Transmissão de dados em tempo real,Agregação de logs, Origem de eventos, Integração de dados e ETL,Comunicação de microsserviços.
+
+Ele atua como um sistema de mensagens pub/sub de alta performance.
 
 Principais conceitos
 
