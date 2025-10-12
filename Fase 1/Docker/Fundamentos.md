@@ -1,6 +1,10 @@
 ## Docker Fundamentos
 
-Docker é a plataforma ideal para executar aplicações em containers, sendo containers uma técnica de virtualização(é uma tecnologia que permite criar vários ambientes simulados ou recursos dedicados ) eficiente a principal inovação do Docker é tornar essa tecnologia acessível a todos os desenvolvedores e administradores de sistema, de forma fácil, sem a necessidade de anos de prática para atingir a proficiência e sem a obrigação de serem desenvolvidas várias ferramentas personalizadas.
+Docker é a plataforma ideal para executar aplicações em **containers**, sendo containers uma técnica de virtualização(é uma tecnologia que permite criar vários ambientes simulados ou recursos dedicados ) eficiente a principal inovação do Docker é tornar essa tecnologia acessível a todos os desenvolvedores e administradores de sistema, de forma fácil, sem a necessidade de anos de prática para atingir a proficiência e sem a obrigação de serem desenvolvidas várias ferramentas personalizadas.
+
+* Containers são unidades de software que empacota código e todas as dependências fazendo ela ser executada facilmente em qualquer configuração.
+
+### Vantagens 
 
 - Facilita o CI/CD
 - Facilita a configuração de variáveis de ambiente
