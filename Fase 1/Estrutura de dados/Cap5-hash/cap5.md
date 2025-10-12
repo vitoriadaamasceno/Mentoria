@@ -21,5 +21,8 @@ As tabelas hash são utéis para:
 
 #### Colisão
 
+São quando dois elementos de uma tabela hash são apontados para uma mesma alocação de uma lista, como por exemplo dois nomes com "a". Isso causaria uma colisão para resolver isso seria necessário que cada item acolado estivesse em uma lista encadeada o que deixaria o algoritmo mais lento. 
 
 #### Desempenho
+
+Logo o melhor desempenho é aquele hash que não tem colisões ou seja que a alocação de memória é bem distruibuida.
