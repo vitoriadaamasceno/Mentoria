@@ -16,17 +16,18 @@ Docker é a plataforma ideal para executar aplicações em **containers**, sendo
 1. Container :
 
 O agrupamento de uma aplicação junto com suas dependências, são bem similares às máquinas virtuais, porém mais leves e mais integrados ao sistema operacional da máquina host, uma vez que, como já dissemos, compartilha o seu kernel, o que proporciona melhor desempenho por conta do gerenciamento único dos recursos.
+ - Namespace: centraliza os processos 
+ - cgroups: estabelece limites de uso de memória
 
 
 2. Imagens:
 
-Uma imagem do Docker, ou imagem de contêiner, é um arquivo executável independente usado para criar um contêiner. Essa imagem de contêiner contém todas as bibliotecas, dependências e arquivos de que o contêiner precisa para ser executado.3
+Uma imagem do Docker, ou imagem de contêiner, é um arquivo executável independente usado para criar um contêiner. Essa imagem de contêiner contém todas as bibliotecas, dependências e arquivos de que o contêiner precisa para ser executado. Podemos usar imagens pronta direto ou usar elas como base para criar nossas proprias imagens.
 
 
 3. Volumes 
 
-
-São que diretórios externos ao container, que são montados diretamente nele.A principal função do volume é persistir os dados
+São que diretórios externos ao container, que são montados diretamente nele. A principal função do volume é persistir os dados.
 
 4. Dockerfile
 
@@ -35,3 +36,6 @@ O dockerfile nada mais é do que um arquivo onde você determina todos os detalh
 [Docker HUb](https://hub.docker.com/)
 
 [Documentação Docker ](https://docs.docker.com/reference/cli/docker/container/run/)
+
+---
+
