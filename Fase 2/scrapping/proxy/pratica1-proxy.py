@@ -1,6 +1,8 @@
 import requests
 import time
-
+'''
+Script para testar conectividade via proxies
+'''
 def teste_conexao(url, proxy_type=None, proxy_address=None, port=None, timeout=10):
     proxies = None
     if proxy_address:
