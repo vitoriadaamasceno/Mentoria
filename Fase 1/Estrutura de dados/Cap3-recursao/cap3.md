@@ -1,6 +1,6 @@
 ### Recursão
 
-- È quando uma função chama a si mesma.
+- É quando uma função chama a si mesma.
 - Toda função recursiva tem o caso base e o caso recursivo.
 - Uma pilha tem duas operações :push o pop.
 - Funções são alocadas através de pilhas
