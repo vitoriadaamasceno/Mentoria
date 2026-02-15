@@ -1,8 +1,8 @@
 ## Ordenação por Seleção
 
-- A memoria do seu computador é cmo um conjunto gigante de gavetas.
-- Quando se quer armazenar multiplos elementos , usa-se arry ou lista
-- No array, todoso os elementos são armazenados um do lado do outro.
+- A memoria do seu computador é como um conjunto gigante de gavetas.
+- Quando se quer armazenar multiplos elementos , usa-se array ou listas
+- No array, todos os elementos são armazenados um do lado do outro.
 - Na lista, os elementos estão espalhados e um elemento armazena o endereço do proximo elemento.
 - Arrays permitem leituras rápidas.
 - Listas encadeadas permitem rápidas inserções e eliminações.
